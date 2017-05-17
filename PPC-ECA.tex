@@ -59,6 +59,7 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{supertabular}       % tabela na capa do documento
+\usepackage{pdfpages}
 % ---
 		
 % ---
@@ -352,10 +353,6 @@
 \partapendices
 % ---
 % Insere arquivo com os apendices A a D
-\input{capitulos/anexo1}
-\input{capitulos/anexo2}
-\input{capitulos/anexo3}
-\input{capitulos/anexo4}
 \end{apendicesenv}
 % ---
 
@@ -368,12 +365,15 @@
 % Inicia os anexos
 % ---
 \begin{anexosenv}
-
 % Imprime uma página indicando o início dos anexos
 \partanexos
 % ---
 % Insere arquivo com os anexos 1, 2 e 3
 % ---
+\input{capitulos/anexo1}
+\input{capitulos/anexo2}
+\input{capitulos/anexo3}
+\input{capitulos/anexo4}
 \end{anexosenv}
 
 %---------------------------------------------------------------------
